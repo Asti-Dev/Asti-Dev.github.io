@@ -1,0 +1,130 @@
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+.navbar-brand i{
+    color: white;
+}
+
+.nav_menu{
+    width: fit-content;
+}
+
+.nav_menu .navbar-nav{
+    flex-direction: row;
+}
+
+.nav_menu .navbar-nav li{
+    margin: 0px 20px;
+}
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 40rem;
+    position: relative;
+    background-color: #343a40;
+    background: url("./img/campbell-boulanger-3ZUsNJhi_Ik-unsplash.jpg") no-repeat center center;
+    background-size: cover;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+.titulo-principal{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    letter-spacing: 1.5px;
+}
+.primero{
+    padding: 3rem 0rem;
+}
+
+.card-body {
+    min-height: 15rem;
+}
+
+.img-nos{
+    min-height: 30rem;
+    background: url("./img/mw-van-der-walt-swG_SuiXbIw-unsplash.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.contacto{
+    min-height: 30rem;
+    background: url("./img/jake-blucker-tMzCrBkM99Y-unsplash.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.contacto-container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.contacto--form{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contacto--form .input {
+    background: transparent;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 3px solid white;
+    margin: 0px 0px 20px 0px;
+    padding: 0px 10px;
+    font-family: "Muli", sans-serif;
+    font-size: 20px;
+    color: white;
+    outline: none;
+    height: 50px;
+}
+
+.contacto--form .input::placeholder {
+    font-family: "Muli", sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.contacto--form .textarea {
+    background: transparent;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 3px solid white;
+    margin: 0px 0px 20px 0px;
+    padding: 0px 10px;
+    font-family: "Muli", sans-serif;
+    font-size: 20px;
+    color: white;
+    outline: none;
+    height: 150px;
+}
+
+.contacto--form .textarea::placeholder {
+    font-family: "Muli", sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.contacto--form .button {
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-family: "Muli", sans-serif;
+    color: white;
+    height: 50px;
+    margin: 10px 0px;
+    padding: 10px 0px;
+}
+
+.swiper-container {
+    width: 80%;
+    height: 400px;
+}
