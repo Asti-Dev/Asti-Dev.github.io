@@ -1,79 +1,130 @@
-
-
-.header .header-shadow{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 20rem;
-    position: relative;
-}
-.header{
-    background: url("../img/tienda.jpg") no-repeat center center;
-    background-size: cover;
-    padding: 0em;
-    margin: 0em;
-}
-.header-shadow{
-    background-color: rgba(0, 0, 0, 0.4);
-}
-.header-info{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family:'Pacifico', cursive;;
-    font-weight: bolder;
-    color: pink;
+.header .header-shadow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 20rem;
+  position: relative;
 }
 
-.header-info h2{
-    text-align: center;
+.header {
+  background: url("../img/tienda.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 0em;
+  margin: 0em;
 }
 
-.main{
-    padding: 0px;
-    margin: 0px;
+.header-shadow {
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
-.grid{
-    width: auto;
-    padding: 0px;
-
+.header-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Pacifico', cursive;
+  font-weight: bolder;
+  color: pink;
 }
 
+.header-info h2 {
+  text-align: center;
+}
+
+.grid {
+  width: auto;
+  padding: 0px;
+}
 
 /* clear fix */
 .grid:after {
-    content: '';
-    display: block;
-    clear: both;
+  content: '';
+  display: block;
+  clear: both;
 }
 
-
 .grid-item {
-    padding: 0px;
-    margin: 0rem;
-    overflow: hidden;
-    float: left;
-    width: 20em;
-    min-height: 20em;    
-    background: #e6e5e4;
-    border: 2px solid #b6b5b4;
+  padding: 0px;
+  margin: 0rem;
+  overflow: hidden;
+  float: left;
+  min-height: 20em;
+  background: #e6e5e4;
+  border: 2px solid #b6b5b4;
+}
+
+@media screen and (max-width: 3600px) {
+  .grid-item {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 1900px) {
+  .grid-item {
+    width: 33%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .grid-item {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .grid-item {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .grid-item {
+    width: 100%;
+  }
 }
 
 .card img {
-    width: auto;
-    height: 15em;
-    object-fit: cover
+  width: auto;
+  height: 15em;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.card-body{
-    background: white;
-    width: auto;
+.card-body {
+  background: white;
+  width: auto;
 }
 
-.card-footer{
-    background: pink;
-    width: auto;
-    font-weight: bolder;    
+.card-footer {
+  background: pink;
+  width: auto;
+  font-weight: bolder;
 }
+
+.main {
+  padding: 0px;
+  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=style.css.map */
