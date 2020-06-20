@@ -1,3 +1,5 @@
+
+
 .header .header-shadow{
     display: flex;
     flex-direction: column;
@@ -28,18 +30,50 @@
     text-align: center;
 }
 
+.main{
+    padding: 0px;
+    margin: 0px;
+}
+
+.grid{
+    width: auto;
+    padding: 0px;
+
+}
 
 
-.card img {
-    width: 100%;
-    height: 15em;
-    object-fit: cover
+/* clear fix */
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
 }
 
 
 .grid-item {
+    padding: 0px;
+    margin: 0rem;
+    overflow: hidden;
     float: left;
-    width: 20em;    
+    width: 20em;
+    min-height: 20em;    
     background: #e6e5e4;
     border: 2px solid #b6b5b4;
+}
+
+.card img {
+    width: auto;
+    height: 15em;
+    object-fit: cover
+}
+
+.card-body{
+    background: white;
+    width: auto;
+}
+
+.card-footer{
+    background: pink;
+    width: auto;
+    font-weight: bolder;    
 }
