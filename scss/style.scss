@@ -1,0 +1,28 @@
+@import './navegation';
+@import './header';
+@import './main';
+@import './footer';
+
+html {
+    scroll-behavior: smooth;
+  }
+
+  .marcador{
+      @media screen and (max-width: 9000px) {
+        &{
+            min-height: 15vh;
+        }
+      }
+      @media screen and (max-width: 900px) {
+        &{      
+            min-height: 6em;
+        }
+      }
+      @media screen and (max-width: 400px) {
+        &{      
+            min-height: 7vh;
+        }
+      }
+      background-color: #a3a3a3;
+      opacity: 0;
+  }

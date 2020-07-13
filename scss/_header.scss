@@ -1,0 +1,54 @@
+.header , .header-shadow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 80vh;
+}
+.header{
+    background: url(../img/Banner.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 0em;
+    margin: 0em;
+}
+.header-shadow{
+    background-color: rgba(119, 15, 0, 0.4);
+    align-items: center;
+    font-family:'Times New Roman', Times, serif;
+    padding: 5% 0%;
+      
+    h1{
+        text-align: center;
+        font-weight: bolder;
+        color: white;
+        @media screen and (max-width: 9000px) {
+            &{
+              font-size: 5vw;
+            }
+          }
+        @media screen and (max-width: 900px) {
+          &{
+            font-size: 10vw;
+          }
+        }
+    }
+    .btn{
+        margin-top: 3%;
+        text-align: center;
+        font-weight: bolder;
+        color: white;
+        background: #770F00;
+        border: 0.7vh solid #F2F2F2;
+        border-radius: 7vh;
+        @media screen and (max-width: 9000px) {
+            &{
+              font-size: 3vw;
+            }
+          }
+        @media screen and (max-width: 900px) {
+          &{
+            font-size: 7vw;
+          }
+        }
+        
+    }
+}
