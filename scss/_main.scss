@@ -20,10 +20,11 @@ main{
 // Quote
 
 .quote-container{
-    min-height: 50vh;
+    height: 85vh;
     font-family: 'Times New Roman', Times, serif;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     .quote{
         @media screen and (max-width: 9000px) {
             &{
@@ -46,6 +47,11 @@ main{
           &{
             font-size: 5vw;
           }
+        }
+          @media screen and (max-width: 400px) {
+            &{
+              font-size: 8vw;
+            }
         }
        
         width: 100%;
@@ -128,7 +134,16 @@ main{
 
 @for $i from 1 through $cantidadEsp {
   .esp#{$i}:hover {
-    transform: scale(1.25, 1.25);
+    @media screen and (max-width: 9000px) {
+      &{
+        transform: scale(1.25, 1.25);
+    }
+    }
+    @media screen and (max-width: 900px) {
+      &{
+        transform: scale(1.08, 1.15);
+      }
+    }
     }
 }
 
@@ -157,9 +172,9 @@ main{
 // Nosotros
 
 .nosotros{
-  margin: 0px;
+  margin: 1rem 0rem;
   padding: 0px;
-  height: 40em;
+  height: 85vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -169,15 +184,12 @@ main{
   font-weight: bold;
   h2{
     color: #6B6B6B;
+    font-size: calc(2rem + 1vw);
   }
   h3{
     color: black;
     font-weight: bold;
-  }
-  .square{
-    height: 100%;
-    width: 100%;
-
+    font-size: calc(2.5rem + 1vw);
   }
   .content{
     background-color: #f5f5f5;
@@ -185,15 +197,26 @@ main{
     width: 100%;
     margin-top: 4vh;
     margin-bottom: 0px;
-    letter-spacing: 1vh;
     display: grid;
     justify-items: center;
     align-items: center;
     grid-template-columns: 15% auto 15%;
     grid-template-rows: 15% auto 15%;
+    .square{
+      height: 100%;
+      width: 100%;
+  
+    }
     p{
+      font-size: calc(1rem + 1.5vw);
+      letter-spacing: 3px;
       grid-column: 1 / 4;
       grid-row: 2/3;
+      margin: 0px;
+      padding: 0px;
+      width: 100%;
+      height: 100%;
+      
       em{
         display: inline-block;
         font-style: normal;
@@ -218,46 +241,16 @@ main{
   }
   @media screen and (max-width: 9000px) {
     &{
-      h2{
-        font-size: 3vw;
-      }
-      h3{
-        font-size: 3.2vw;
-      }
       p{
-        font-size: 2.5vw;
-        letter-spacing: 3px;
-        line-height: 7vh;
-      }
-    }
-  }
-  @media screen and (max-width: 900px) {
-    &{
-      h2{
-        font-size: 2.5em;
-      }
-      h3{
-        font-size: 3em;
-      }
-      p{
-        font-size: 1.9em;
-        letter-spacing: 3px;
-        line-height: 1em;
+         line-height: 7vh;
+
       }
     }
   }
   @media screen and (max-width: 400px) {
   &{
-    h2{
-      font-size: 4vh;
-    }
-    h3{
-      font-size: 4.2vh;
-    }
     p{
-      font-size: 1.5em;
-      letter-spacing: 3px;
-      line-height: 1.5em;
+        line-height: 4vh;
     }
   }
   }
@@ -270,6 +263,7 @@ main{
 .contacto{
   background: url(../img/edificio.jpg) no-repeat center center;
   background-size: cover;
+  background-attachment: fixed;
   padding: 0em;
   margin: 0em;
 }
@@ -384,7 +378,7 @@ main{
       a{
         color: white;
         text-decoration: none;
-        font-size: 125%;
+        font-size: 100%;
       }
       a:hover{
         text-decoration: underline;
@@ -421,6 +415,7 @@ main{
     }
     input:focus{
       border: 0.6vh solid #BC0000;
+      outline: none;
     }
     textarea{
       height: 20vh;
@@ -433,6 +428,7 @@ main{
     }
     textarea:focus{
       border: 0.6vh solid #BC0000;
+      outline: none;
     }
     button{
       margin-top: 4vh;

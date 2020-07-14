@@ -1,3 +1,7 @@
+.current {
+  border-bottom: #770F00 solid 3px;
+}
+
 .logo {
   width: 100%;
 }
@@ -37,12 +41,13 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 80vh;
+  min-height: 85vh;
 }
 
 .header {
   background: url(../img/Banner.jpg) no-repeat center center;
   background-size: cover;
+  background-attachment: fixed;
   padding: 0em;
   margin: 0em;
 }
@@ -116,7 +121,7 @@ main {
 }
 
 .quote-container {
-  min-height: 50vh;
+  height: 85vh;
   font-family: 'Times New Roman', Times, serif;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -125,6 +130,9 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (max-width: 9000px) {
@@ -155,6 +163,12 @@ main {
 @media screen and (max-width: 900px) {
   .quote-container .quote-content {
     font-size: 5vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .quote-container .quote-content {
+    font-size: 8vw;
   }
 }
 
@@ -437,44 +451,116 @@ main {
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.esp1:hover {
-  -webkit-transform: scale(1.25, 1.25);
-          transform: scale(1.25, 1.25);
+@media screen and (max-width: 9000px) {
+  .esp1:hover {
+    -webkit-transform: scale(1.25, 1.25);
+            transform: scale(1.25, 1.25);
+  }
 }
 
-.esp2:hover {
-  -webkit-transform: scale(1.25, 1.25);
-          transform: scale(1.25, 1.25);
+@media screen and (max-width: 900px) {
+  .esp1:hover {
+    -webkit-transform: scale(1.08, 1.15);
+            transform: scale(1.08, 1.15);
+  }
 }
 
-.esp3:hover {
-  -webkit-transform: scale(1.25, 1.25);
-          transform: scale(1.25, 1.25);
+@media screen and (max-width: 9000px) {
+  .esp2:hover {
+    -webkit-transform: scale(1.25, 1.25);
+            transform: scale(1.25, 1.25);
+  }
 }
 
-.esp4:hover {
-  -webkit-transform: scale(1.25, 1.25);
-          transform: scale(1.25, 1.25);
+@media screen and (max-width: 900px) {
+  .esp2:hover {
+    -webkit-transform: scale(1.08, 1.15);
+            transform: scale(1.08, 1.15);
+  }
 }
 
-.esp5:hover {
-  -webkit-transform: scale(1.25, 1.25);
-          transform: scale(1.25, 1.25);
+@media screen and (max-width: 9000px) {
+  .esp3:hover {
+    -webkit-transform: scale(1.25, 1.25);
+            transform: scale(1.25, 1.25);
+  }
 }
 
-.esp6:hover {
-  -webkit-transform: scale(1.25, 1.25);
-          transform: scale(1.25, 1.25);
+@media screen and (max-width: 900px) {
+  .esp3:hover {
+    -webkit-transform: scale(1.08, 1.15);
+            transform: scale(1.08, 1.15);
+  }
 }
 
-.esp7:hover {
-  -webkit-transform: scale(1.25, 1.25);
-          transform: scale(1.25, 1.25);
+@media screen and (max-width: 9000px) {
+  .esp4:hover {
+    -webkit-transform: scale(1.25, 1.25);
+            transform: scale(1.25, 1.25);
+  }
 }
 
-.esp8:hover {
-  -webkit-transform: scale(1.25, 1.25);
-          transform: scale(1.25, 1.25);
+@media screen and (max-width: 900px) {
+  .esp4:hover {
+    -webkit-transform: scale(1.08, 1.15);
+            transform: scale(1.08, 1.15);
+  }
+}
+
+@media screen and (max-width: 9000px) {
+  .esp5:hover {
+    -webkit-transform: scale(1.25, 1.25);
+            transform: scale(1.25, 1.25);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .esp5:hover {
+    -webkit-transform: scale(1.08, 1.15);
+            transform: scale(1.08, 1.15);
+  }
+}
+
+@media screen and (max-width: 9000px) {
+  .esp6:hover {
+    -webkit-transform: scale(1.25, 1.25);
+            transform: scale(1.25, 1.25);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .esp6:hover {
+    -webkit-transform: scale(1.08, 1.15);
+            transform: scale(1.08, 1.15);
+  }
+}
+
+@media screen and (max-width: 9000px) {
+  .esp7:hover {
+    -webkit-transform: scale(1.25, 1.25);
+            transform: scale(1.25, 1.25);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .esp7:hover {
+    -webkit-transform: scale(1.08, 1.15);
+            transform: scale(1.08, 1.15);
+  }
+}
+
+@media screen and (max-width: 9000px) {
+  .esp8:hover {
+    -webkit-transform: scale(1.25, 1.25);
+            transform: scale(1.25, 1.25);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .esp8:hover {
+    -webkit-transform: scale(1.08, 1.15);
+            transform: scale(1.08, 1.15);
+  }
 }
 
 .esp1:hover::after {
@@ -532,9 +618,9 @@ main {
 }
 
 .nosotros {
-  margin: 0px;
+  margin: 1rem 0rem;
   padding: 0px;
-  height: 40em;
+  height: 85vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -555,16 +641,13 @@ main {
 
 .nosotros h2 {
   color: #6B6B6B;
+  font-size: calc(2rem + 1vw);
 }
 
 .nosotros h3 {
   color: black;
   font-weight: bold;
-}
-
-.nosotros .square {
-  height: 100%;
-  width: 100%;
+  font-size: calc(2.5rem + 1vw);
 }
 
 .nosotros .content {
@@ -573,7 +656,6 @@ main {
   width: 100%;
   margin-top: 4vh;
   margin-bottom: 0px;
-  letter-spacing: 1vh;
   display: -ms-grid;
   display: grid;
   justify-items: center;
@@ -586,13 +668,24 @@ main {
       grid-template-rows: 15% auto 15%;
 }
 
+.nosotros .content .square {
+  height: 100%;
+  width: 100%;
+}
+
 .nosotros .content p {
+  font-size: calc(1rem + 1.5vw);
+  letter-spacing: 3px;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1 / 4;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
 }
 
 .nosotros .content p em {
@@ -621,44 +714,14 @@ main {
 }
 
 @media screen and (max-width: 9000px) {
-  .nosotros h2 {
-    font-size: 3vw;
-  }
-  .nosotros h3 {
-    font-size: 3.2vw;
-  }
   .nosotros p {
-    font-size: 2.5vw;
-    letter-spacing: 3px;
     line-height: 7vh;
   }
 }
 
-@media screen and (max-width: 900px) {
-  .nosotros h2 {
-    font-size: 2.5em;
-  }
-  .nosotros h3 {
-    font-size: 3em;
-  }
-  .nosotros p {
-    font-size: 1.9em;
-    letter-spacing: 3px;
-    line-height: 1em;
-  }
-}
-
 @media screen and (max-width: 400px) {
-  .nosotros h2 {
-    font-size: 4vh;
-  }
-  .nosotros h3 {
-    font-size: 4.2vh;
-  }
   .nosotros p {
-    font-size: 1.5em;
-    letter-spacing: 3px;
-    line-height: 1.5em;
+    line-height: 4vh;
   }
 }
 
@@ -669,6 +732,7 @@ main {
 .contacto {
   background: url(../img/edificio.jpg) no-repeat center center;
   background-size: cover;
+  background-attachment: fixed;
   padding: 0em;
   margin: 0em;
 }
@@ -860,7 +924,7 @@ main {
 .contacto-info .redes-show .show a {
   color: white;
   text-decoration: none;
-  font-size: 125%;
+  font-size: 100%;
 }
 
 .contacto-info .redes-show .show a:hover {
@@ -917,6 +981,7 @@ main {
 
 .contacto-form form input:focus {
   border: 0.6vh solid #BC0000;
+  outline: none;
 }
 
 .contacto-form form textarea {
@@ -932,6 +997,7 @@ main {
 
 .contacto-form form textarea:focus {
   border: 0.6vh solid #BC0000;
+  outline: none;
 }
 
 .contacto-form form button {
@@ -953,14 +1019,18 @@ main {
 .footer {
   background-color: black;
   color: white;
-  font-size: 2vh;
-  height: 3vh;
+  height: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.footer p {
+  width: auto;
+  font-size: 100%;
 }
 
 html {

@@ -1,8 +1,11 @@
 .footer{
     background-color: black;
     color: white;
-    font-size: 2vh;
-    height: 3vh;
+    height: 5%;
     display: flex;
     justify-content: space-between;
+    p{
+        width: auto;
+        font-size: 100%;
+    }
 }
