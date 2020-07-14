@@ -620,7 +620,7 @@ main {
 .nosotros {
   margin: 1rem 0rem;
   padding: 0px;
-  height: calc(5rem + 85vh);
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
