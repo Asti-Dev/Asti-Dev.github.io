@@ -174,7 +174,7 @@ main{
 .nosotros{
   margin: 1rem 0rem;
   padding: 0px;
-  height: 85vh;
+  height: calc(5rem + 85vh);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
